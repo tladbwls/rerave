@@ -19,7 +19,7 @@
     height: .1rem;
     width: 100%;
     margin-bottom: .5rem;
-    background: #000;
+    background: #fff;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -41,7 +41,10 @@
     .header .hamburger span:nth-child(4) {
       top: 1.2rem;
     }
-    
+    .header .hamburger.open span {
+      background: #000;
+    }
+
     .header .hamburger.open span:nth-child(1) {
       top: 1.8rem;
       width: 0%;
