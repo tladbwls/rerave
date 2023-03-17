@@ -1,12 +1,22 @@
 /* header style */
 .header {width: 100%; position: fixed; top: 0;}
-.header .container {width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 5rem;} 
+.header .container {width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 4rem 5rem;} 
 .header .logo {width: 13.5rem; height: 2rem; z-index: 10;}
 .header .logo h1 {position: relative; top: 0; left: -99999px;}
 .header .logo .logo-img {width: 100%; height: 2rem; background: url(/img/gnb_logo_b.svg) center no-repeat; background-size: cover;}
 .header .header-right {display: flex; justify-content: center; align-items: center;}
 .header .header-right .header-nav {display: flex; align-items: center; padding-right: 4rem;}
-.header .header-right .header-nav>li>a {margin: 0 2rem; font-size: 1.5rem; color: #fff; font-family: 'Marcellus'; }
+.header .header-right .header-nav>li>a {display: flex; flex-direction: column; margin: 0 2rem; font-size: 1.5rem; color: #fff; font-family: 'Marcellus'; }
+.header .header-right .header-nav>li:hover>a::after {content: ''; width: 100%; height: .2rem; margin-top: .5rem; background: #fff; animation: right 1s ease;}
+@keyframes right {
+    from { opacity: 0; width: 0;}
+    to { opacity: 1; width: 100%;}
+}
+.header .header-right .header-nav>li{position: relative;}
+.header .header-right .header-nav>li>ul {position: absolute; top: 5rem; left: 0; width: 23rem; height: auto; padding: 3rem; box-sizing: border-box; border: 1px solid #fff; background: #fff;}
+.header .header-right .header-nav>li>ul>li:nth-child(1) {margin-top: 0;}
+.header .header-right .header-nav>li>ul>li {margin-top: 2rem;}
+.header .header-right .header-nav>li>ul>li>a {font-size: 1.4rem;}
 /* gnb style */
 .header .gnb-menu {position: absolute; top: -100vh; visibility: hidden; opacity: 0; }
 .header .gnb-menu.open {position: absolute; top: 0; width: 100%; height: 100vh; display: flex; justify-content: space-between; padding: 4rem 5rem; background: #fff; visibility: visible; opacity: 1; transition: all 1s ease;}
@@ -26,3 +36,8 @@
 /* main style */
 .main-section {width: 100%; height: auto;}
 .main-section .main-img {width: 100%; height: 100vh; background: url(/img/top_banner.jpg) center no-repeat; background-size: cover;}
+.main-section .main-img .main-txt {position: relative; top: 30%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.main-section .main-img .main-txt h2 {margin-bottom: 1.6rem; font-size: 7rem; line-height: 8rem; text-align: center; color: #fff; font-family: 'Marcellus';}
+.main-section .main-img .main-txt span {margin-bottom: 4rem; font-size: 1.6rem;  color: #fff; font-family: 'Pretendard';}
+.main-section .main-img .main-txt button {display: flex; flex-direction: column; border: none; background: rgba(0,0,0,0); font-size: 2rem; color: #fff; font-family: 'Marcellus';}
+.main-section .main-img .main-txt button::after {content: ''; width: 100%; height: .2rem; margin-top: .5rem; background: #fff;}
