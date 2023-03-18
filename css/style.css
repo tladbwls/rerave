@@ -6,17 +6,23 @@
 .header .logo .logo-img {width: 100%; height: 2rem; background: url(/img/gnb_logo_b.svg) center no-repeat; background-size: cover;}
 .header .header-right {display: flex; justify-content: center; align-items: center;}
 .header .header-right .header-nav {display: flex; align-items: center; padding-right: 4rem;}
-.header .header-right .header-nav>li>a {display: flex; flex-direction: column; margin: 0 2rem; font-size: 1.5rem; color: #fff; font-family: 'Marcellus'; }
-.header .header-right .header-nav>li:hover>a::after {content: ''; width: 100%; height: .2rem; margin-top: .5rem; background: #fff; animation: right 1s ease;}
+.header .header-right .header-nav>li>a { position: relative; margin: 0 2rem; padding-bottom: 5rem; font-size: 1.5rem; color: #fff; font-family: 'Marcellus'; }
+.header .header-right .header-nav>li:hover .line {position: absolute; top: 1.5rem; left: 2rem; width: 70%; height: .2rem; margin-top: .5rem; background: #fff; animation: right 1s ease;}
 @keyframes right {
+    from { opacity: 0; width: 0;}
+    to { opacity: 1; width: 70%;}
+}
+.header .header-right .header-nav>li{position: relative;}
+.header .header-right .header-nav>li>ul {display: none;}
+.header .header-right .header-nav>li:hover>ul {display: block; position: absolute; left: 0; top: 5rem; width: 23rem; height: auto; padding: 3rem; box-sizing: border-box; border: 1px solid #fff; background: #fff;}
+.header .header-right .header-nav>li>ul>li:nth-child(1) {margin-top: 0;}
+.header .header-right .header-nav>li>ul>li {position: relative; margin-top: 2rem;}
+.header .header-right .header-nav>li>ul>li>a {font-size: 1.4rem;}
+.header .header-right .header-nav>li>ul>li:hover .line {position: absolute; top: 1.5rem; left: 0; width: 100%; height: .2rem; margin-top: .5rem; background: #000; animation: right1 1s ease;}
+@keyframes right1 {
     from { opacity: 0; width: 0;}
     to { opacity: 1; width: 100%;}
 }
-.header .header-right .header-nav>li{position: relative;}
-.header .header-right .header-nav>li>ul {position: absolute; top: 5rem; left: 0; width: 23rem; height: auto; padding: 3rem; box-sizing: border-box; border: 1px solid #fff; background: #fff;}
-.header .header-right .header-nav>li>ul>li:nth-child(1) {margin-top: 0;}
-.header .header-right .header-nav>li>ul>li {margin-top: 2rem;}
-.header .header-right .header-nav>li>ul>li>a {font-size: 1.4rem;}
 /* gnb style */
 .header .gnb-menu {position: absolute; top: -100vh; visibility: hidden; opacity: 0; }
 .header .gnb-menu.open {position: absolute; top: 0; width: 100%; height: 100vh; display: flex; justify-content: space-between; padding: 4rem 5rem; background: #fff; visibility: visible; opacity: 1; transition: all 1s ease;}
@@ -39,5 +45,17 @@
 .main-section .main-img .main-txt {position: relative; top: 30%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .main-section .main-img .main-txt h2 {margin-bottom: 1.6rem; font-size: 7rem; line-height: 8rem; text-align: center; color: #fff; font-family: 'Marcellus';}
 .main-section .main-img .main-txt span {margin-bottom: 4rem; font-size: 1.6rem;  color: #fff; font-family: 'Pretendard';}
-.main-section .main-img .main-txt button {display: flex; flex-direction: column; border: none; background: rgba(0,0,0,0); font-size: 2rem; color: #fff; font-family: 'Marcellus';}
-.main-section .main-img .main-txt button::after {content: ''; width: 100%; height: .2rem; margin-top: .5rem; background: #fff;}
+/* mask section style */
+.mask-section {display: flex; justify-content: center; align-items: center;  padding: 18rem 15rem;}
+.mask-section .mask-right {width: 50%; height: auto;}
+.mask-section .mask-right .mask-img {width: 68rem; height: 90rem; background: url(/img/prd_lifting_mask2.jpg) no-repeat center;}
+.mask-section .mask-left {width: 50%; height: auto; padding-left: 18rem;}
+.mask-section .mask-left button {color: #000;}
+.mask-section .mask-left button::after {background: #000;}
+/* cream section style */
+.cream-section{position: relative;}
+.cream-section .wrapper {display: flex; justify-content: center; align-items: flex-end; margin-bottom: 20rem; z-index: 10;} 
+.cream-section .cream-left {width: 40%; padding-right: 5rem;}
+.cream-section .cream-right {width: 50%; height: auto;}
+.cream-section .cream-right .cream-img {width: 95rem; height: 70rem; background: url(/img/prd_penellagen_cream.jpg) no-repeat center;}
+.cream-section .bg-img {position: absolute; top: 50%; width: 100%; height: 50rem; background: url(/img/prd_bg.png) no-repeat center; background-size: cover;}
