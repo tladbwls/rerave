@@ -1,5 +1,6 @@
 /* header style */
-.header {width: 100%; position: fixed; top: 0;}
+.header {width: 100%; height: 4rem; background: #f5b335;; position: fixed; top: 0;}
+.nav-up {top: -4rem}
 .header .container {width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 4rem 5rem;} 
 .header .logo {width: 13.5rem; height: 2rem; z-index: 10;}
 .header .logo h1 {position: relative; top: 0; left: -99999px;}
@@ -45,17 +46,62 @@
 .main-section .main-img .main-txt {position: relative; top: 30%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .main-section .main-img .main-txt h2 {margin-bottom: 1.6rem; font-size: 7rem; line-height: 8rem; text-align: center; color: #fff; font-family: 'Marcellus';}
 .main-section .main-img .main-txt span {margin-bottom: 4rem; font-size: 1.6rem;  color: #fff; font-family: 'Pretendard';}
+.main-section .main-img .main-txt button {color: #fff;}
+.main-section .main-img .main-txt button::after {background: #fff;}
 /* mask section style */
 .mask-section {display: flex; justify-content: center; align-items: center;  padding: 18rem 15rem;}
 .mask-section .mask-right {width: 50%; height: auto;}
 .mask-section .mask-right .mask-img {width: 68rem; height: 90rem; background: url(/img/prd_lifting_mask2.jpg) no-repeat center;}
 .mask-section .mask-left {width: 50%; height: auto; padding-left: 18rem;}
-.mask-section .mask-left button {color: #000;}
-.mask-section .mask-left button::after {background: #000;}
 /* cream section style */
 .cream-section{position: relative;}
-.cream-section .wrapper {display: flex; justify-content: center; align-items: flex-end; margin-bottom: 20rem; z-index: 10;} 
+.cream-section .wrapper {position: relative; display: flex; justify-content: center; align-items: flex-end; margin-bottom: 20rem; z-index: 10;} 
 .cream-section .cream-left {width: 40%; padding-right: 5rem;}
 .cream-section .cream-right {width: 50%; height: auto;}
 .cream-section .cream-right .cream-img {width: 95rem; height: 70rem; background: url(/img/prd_penellagen_cream.jpg) no-repeat center;}
-.cream-section .bg-img {position: absolute; top: 50%; width: 100%; height: 50rem; background: url(/img/prd_bg.png) no-repeat center; background-size: cover;}
+.cream-section .bg-img {position: absolute; top: 0; width: 100%; height: 110rem; background: url(/img/prd_bg.png) no-repeat center; background-size: cover;}
+/* starfish section style */
+.starfish-section {position: relative; width: 100%; height: auto; min-height: 90rem; margin: 18rem 0;}
+.starfish-section .wrapper {position: absolute; top: 0; display: flex; justify-content: center; align-items: center; width: 100%; height: auto;}
+.starfish-section .wrapper .starfish-left {width: 40%; height: auto; margin-left: 15rem;}
+.starfish-section .wrapper .starfish-left .starfish-img {width: 68rem; height: 90rem; background: url(/img/prd_starfish_mask.jpg) center no-repeat;}
+.starfish-section .wrapper .starfish-right {width: 60%; height: auto; padding-left: 18rem;}
+/* about section style */
+.about-section {display: flex; justify-content: flex-start; align-items: center; width: 100%; height: auto; min-height: 55rem; padding: 19rem 0; background: url(/img/about_bg.jpg) no-repeat center;}
+.about-section .about-left {width: 60%; height: auto;}
+.about-section .about-left .img-box {display: flex; justify-content: center; align-items: center; gap: 1.5rem;}
+.about-section .about-left .img-box .img1 {width: 44rem; height: 55rem; background: url(/img/about_pic1.jpg) no-repeat center; background-size: cover;}
+.about-section .about-left .img-box .img2{width: 44rem; height: 55rem; background: url(/img/about_pic2.jpg) no-repeat center; background-size: cover;}
+.about-section .about-right .txt-box {padding: 10rem; text-align: center;}
+.about-section .about-right .txt-box .txt2 {margin-bottom: 2.5rem;}
+.about-section .about-right .txt-box button {position: relative; left: 37%;}
+/* technology section style */
+.technology-section {padding: 18rem 5rem;}
+.technology-section .txt-box {padding-bottom: 9rem;}
+.technology-section .txt-box .txt2 {padding-bottom: 2.5rem;}
+.technology-section .img-box {display: flex; justify-content: center; align-items: center; gap: 1.5rem;}
+.technology-section .img-box .img1 {position: relative; width: var(--ls-1-3); height: 63rem; background: url(/img/tech_penellagen.jpg) no-repeat center; background-size: cover; transition: all .4s ease;}
+.technology-section .img-box .img1:hover {border-radius: 10%;}
+.technology-section .img-box .img1 .overlay {position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); transition: all .4s ease; opacity: 1; }
+.technology-section .img-box .img1:hover .overlay {opacity: 0;}
+.technology-section .img-box .img2 {position: relative; width: var(--ls-1-3); height: 63rem; background: url(/img/tech_sheet.jpg) no-repeat center; background-size: cover; transition: all .4s ease;}
+.technology-section .img-box .img2:hover {border-radius: 10%;}
+.technology-section .img-box .img2 .overlay {position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); transition: all .4s ease; opacity: 1; }
+.technology-section .img-box .img2:hover .overlay {opacity: 0;}
+.technology-section .img-box .img3 {position: relative; width: var(--ls-1-3); height: 63rem; background: url(/img/tech_ingredient.jpg) no-repeat center; background-size: cover; transition: all .4s ease;}
+.technology-section .img-box .img3:hover {border-radius: 10%;}
+.technology-section .img-box .img3 .overlay {position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); transition: all .4s ease; opacity: 1; }
+.technology-section .img-box .img3:hover .overlay {opacity: 0;}
+.technology-section .img-box .img-txts {position: relative; z-index: 10; display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: auto; min-height: 63rem; padding: 4.2rem 3.2rem;}
+.technology-section .img-box .img-txts p {font-size: 4.2rem; line-height: 4.8rem; color: #fff; font-family: 'Marcellus';}
+.technology-section .img-box .img-txts span {font-size: 1.6rem; line-height: 2.6rem; color: #fff; font-family: 'Pretendard';}
+/* footer style */
+.footer {width: 100%; height: auto; padding: 9rem 5rem 4rem;}
+.footer .wrapper {width: 100%; height: auto; display: flex; }
+.footer .wrapper .footer-left {width: 60%; height: auto; display: flex; flex-direction: column; gap: 8rem; }
+.footer .wrapper .footer-left .logo{width: 13rem; height: 3rem; background: url(/img/ft_logo.svg) no-repeat center; background-size: cover;}
+.footer .wrapper .footer-left p {font-size: 1.2rem; line-height: 1.5rem; color: #bababa;}
+.footer .footer-right {display: flex; justify-content: center; align-items: center; gap: 10rem; width: 40%;}
+.footer .footer-right dl {font-size: 1.2rem; line-height:  1.8rem;}
+.footer .footer-right dl dt {margin-bottom: 1rem;}
+
