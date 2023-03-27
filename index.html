@@ -12,6 +12,8 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
     <!-- remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Aos Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <!-- style css -->
     <link rel="stylesheet" href="/css/nomalize.css">
     <link rel="stylesheet" href="/css/hamburger.css">
@@ -122,7 +124,7 @@
                     <h2>REVIVE YOUR YOUTH <br> 
                         AND BEAUTIFUL MOMENT</h2>
                     <span>푸른 바다와 깊이 있는 연구가 만나 만드는 경이로운 가치</span>
-                    <button>View more</button>
+                    <button data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">View more</button>
                 </div>
                 
             </div>
@@ -130,10 +132,10 @@
         <!-- //main-section -->
         <!-- mask-section -->
         <section class="mask-section">
-            <div class="mask-right">
+            <div class="mask-right" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="mask-img"></div>
             </div>
-            <div class="mask-left">
+            <div class="mask-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 <div class="txt-box">
                     <div class="txt1">
                         #불가사리 마스크 #재생 #회복
@@ -156,7 +158,7 @@
         <!-- cream-section -->
         <section class="cream-section">
             <div class="wrapper">
-                <div class="cream-left">
+                <div class="cream-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                     <div class="txt-box">
                         <div class="txt1">
                             #페넬라겐® #재생 #회복
@@ -175,7 +177,7 @@
                         <button>View more</button>
                     </div>
                 </div>
-                <div class="cream-right">
+                <div class="cream-right" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
                     <div class="cream-img"></div>
                 </div>
             </div>
@@ -186,10 +188,10 @@
         <!-- starfish-section -->
         <section class="starfish-section">
             <div class="wrapper">
-                <div class="starfish-left">
+                <div class="starfish-left" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     <div class="starfish-img"></div>
                 </div>
-                <div class="starfish-right">
+                <div class="starfish-right" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                     <div class="txt-box">
                         <div class="txt1">
                             #불가사리 마스크 #탄력
@@ -216,11 +218,11 @@
         <section class="about-section">
             <div class="about-left">
                 <div class="img-box">
-                    <div class="img1"></div>
-                    <div class="img2"></div>
+                    <div class="img1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"></div>
+                    <div class="img2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"></div>
                 </div>
             </div>
-            <div class="about-right">
+            <div class="about-right" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 <div class="txt-box">
                     <div class="txt1">
                         Brand Story
@@ -239,14 +241,14 @@
         <!-- technology-section -->
         <section class="technology-section">
             <div class="txt-box">
-                <div class="txt2">
+                <div class="txt2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     Rerave Technology
                 </div>
-                <div class="txt4">
+                <div class="txt4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                     리라브는 나를, 우리를 그리고 더 나아가 세상을<br> 모두 건강하고 아름답게 하기 위한 고민에서 시작하였습니다.
                 </div>
             </div>
-            <div class="img-box">
+            <div class="img-box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <div class="img1">
                     <div class="img-txts">
                         <p>01. PENELLAGEN®</p>
@@ -319,6 +321,11 @@
         </footer>
         <!-- //footer -->
     </div>
+    <!-- aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/js/header.js"></script>

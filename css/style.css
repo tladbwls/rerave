@@ -50,7 +50,7 @@
 .main-section .main-img .main-txt button::after {background: #fff;}
 /* mask section style */
 .mask-section {display: flex; justify-content: center; align-items: center;  padding: 18rem 15rem;}
-.mask-section .mask-right {width: 50%; height: auto;}
+.mask-section .mask-right {width: 50%; height: auto; }
 .mask-section .mask-right .mask-img {width: 68rem; height: 90rem; background: url(/img/prd_lifting_mask2.jpg) no-repeat center;}
 .mask-section .mask-left {width: 50%; height: auto; padding-left: 18rem;}
 /* cream section style */
